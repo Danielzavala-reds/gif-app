@@ -1,0 +1,6 @@
+<div class="col">
+    <h5>Buscar:</h5>
+    <!--Usamos el evento keyup.enter para que cuando se suelte la tecla de enter, va a disparar el evento, creamos la referencia local #txtBuscar que es el input  -->
+    <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="buscar()" #txtBuscar> 
+    <!-- Eliminamos el txtBuscar.value dentro del evento ya que accedimos al valor directamente desde ElementRef -->
+</div>
